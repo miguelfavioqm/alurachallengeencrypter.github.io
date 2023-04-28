@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+body{
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #F3F5FC;
+    display: flex;
+    padding: 3em;
+    height: 50em;
+}
+.input-section{
+    width: 60%;
+    padding: 1em 1em 7em 7em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.txt-input{
+    margin: 5em 0em;
+    border-style: none;
+    background-color: #F3F5FC;
+    font-size: 2em;
+    color: #0A3871;
+    outline: none;
+    max-width: 75%;
+    height: 100%;
+    resize: none;
+}
+.txt-input::placeholder{
+    color: #0A3871;
+}
+.second-section{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+.warning-section{
+    display: flex;
+    gap: 5px;
+}
+button{
+    border-radius: 2em;
+    width: 25em;
+    height: 5em;
+    border: #0A3871 solid 2px;
+    cursor: pointer;
+    font-size: 1em;
+}
+button:hover{
+    opacity: 75%;
+}
+.input-section-buttons{
+    display: flex;
+    gap: 30px;
+}
+.btn-encriptar{
+    background-color: #0A3871;
+    color: white;
+}
+.btn-desencriptar{
+    background-color: #D8DFE8;
+    color: #0A3871;
+}
+.btn-copiar{
+    background-color: white;
+    color: #0A3871;
+    display: none;
+}
+.ouput-section{
+    height: 100%;
+    max-width: 25%;
+    padding: 3em;
+    background-color: white;
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagenmunieco{
+    width: 80%;
+}
+.output-txt p:first-child{
+    margin: 1em;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.output-txt p:last-child{
+    text-align: center;
+    font-size: 1.2em;
+}
+.resultado{
+    /*height: auto;*/
+    width: 100%;
+    color: #495057;
+    font-size: 2em;
+    border-style: none;
+    resize: none;
+    outline: none;
+}
+@media only screen and (max-width: 1024px) {
+    body{
+        flex-direction: column;
+        gap: 3em;
+    }
+    .input-section{
+        width: 100%;
+        padding: 0;
+    }
+    .txt-input{
+        margin: auto;
+    }
+    .ouput-section{
+        margin: 1em;
+        padding: 1.5em;
+        margin: auto;
+        width: 100%;
+        max-width: 80%;
+    }
+  }
+@media only screen and (max-width: 425px) {
+    .input-section-buttons{
+        flex-direction: column;
+    }
+    button{
+        width: 100%;
+    }
+    .imagenmunieco{
+        display: none;
+    }
+    .resultado{
+        height: 100%;
+    }
+}
