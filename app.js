@@ -74,5 +74,8 @@ function limpiarElementoDeSalida(){
 }
 function copiar(){
     let palabra = document.querySelector(".resultado");
+    navigator.clipboard.writeText(palabra.value);
+    alert("El texto tambien a sido copiado al portapeles");
     document.querySelector(".txt-input").value = palabra.innerHTML
+    
 }
